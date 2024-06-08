@@ -1,0 +1,20 @@
+nome = input('Digite o Nome da Aluna:')
+idade = int(input('Digite a Idade da Aluna:'))
+altura = float(input('Digite a Altura da Aluna:'))
+hoobies = input('Digite os Hobbies das Alunas Separado por Virgulas:')
+hoobies1 = hoobies.split(',') #transforma os Hoobies em uma lista
+endereco_rua = input('Digite o Nome da Rua da Aluna:')
+endereco_numero = int(input('Digite o Numero da casa da aluna:'))
+endereco_cidade = input('Digite a Cidade da Aluna:')
+endereco = (endereco_rua, endereco_numero, endereco_cidade)
+email = input('Digite o Email da Aluna:')
+telefone = input('Digite o Telefone da Aluna:')
+contato = {'email': email, 'telefone': telefone}
+
+print('\nOlá, segue informações sobre a aluna:')
+print('Nome:', nome)
+print('Idade:', idade)
+print('Altura:', altura)
+print('Hoobies:', hoobies1)
+print('Endereco:', endereco)
+print('Contato:', contato)
